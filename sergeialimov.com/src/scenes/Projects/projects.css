@@ -1,0 +1,122 @@
+#projects {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #424B54;
+}
+
+.projects__content {
+  padding-top: 70px;
+}
+
+.projects__header-h1 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 50px;
+  color: #dddfd4;
+}
+
+.projects__header-h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #dddfd4;
+}
+
+.projects__text {
+  color: #dddfd4;
+  font-weight: 100;
+}
+
+.projects__text__inline {
+  display: inline;
+}
+
+.projects__nda-link {
+  display: inline;
+  color: #dddfd4;
+  font-weight: 300;
+  text-decoration-color: #dddfd4;
+}
+
+.projects__nda-link:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+
+.projects__link {
+  color: #dddfd4;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration-color: #dddfd4;
+}
+
+.projects__link:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+.projects__github-link {
+  color: #dddfd4;
+  font-size: 20px;
+  font-weight: 150;
+  text-decoration-color: #dddfd4;
+  letter-spacing: 0.05em;
+}
+
+.projects__github-link:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+#project-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.left-column {
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+.right-column {
+  margin-left: 40px;
+}
+
+.project-name {
+  margin-top: 3px;
+  text-align: center;
+  padding-top: 6px;
+  font-weight: 200;
+}
+
+@media (max-width: 1000px) {
+  #projects {
+    grid-template-columns: 1fr ;
+    height: 1200px;
+  }
+
+  .left-column {
+    margin: 30 auto 30 auto;
+  }
+
+  .right-column {
+    margin: 30 auto 30 auto;
+  }
+}

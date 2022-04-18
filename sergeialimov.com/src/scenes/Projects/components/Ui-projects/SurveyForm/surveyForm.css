@@ -1,0 +1,120 @@
+.survey-form__main {
+  max-width: 70%;
+}
+
+.survey-form__h1 {
+  text-align: center;
+}
+
+.survey-form__form {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  max-height: 1800px;
+  margin: auto;
+  padding: 20px 10px 20px 10px;
+}
+
+.survey-form__description {
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.survey-form__form-body {
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  grid-column-gap: 15px;
+  align-items: center;
+}
+
+.survey-form__label {
+  text-align: right;
+  margin: 10px 0px 10px auto;
+  width: 85%;
+}
+
+.labels-align-top {
+  align-self: flex-start;
+  padding-top: 5px;
+}
+
+.survey-form__right-tab {
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.survey-form__input {
+  text-align: left;
+  height: 30px;
+  width: 65%;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.survey-form__select {
+  width: 10%;
+  height: 35px;
+  min-width: 150px;
+  border-color: lightgray;
+}
+
+.survey-form__textarea {
+  width: 80%;
+  padding: 5px 5px 5px 5px;
+  border-color: lightgray;
+  border-radius: 2px;
+  color: gray;
+}
+
+.survey-form__submit__container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.survey-form__submit__button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #59ace0;
+  font-size: 18px;
+  color: white;
+  border-style: none;
+}
+
+@media (max-width: 500px) {
+  .survey-form__form {
+    padding-left: 10px;
+  }
+
+  .survey-form__form-body {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    padding-left: 0px;
+    max-width: 100%;
+  }
+
+  .survey-form__description {
+    max-width: 95%;
+  }
+
+  .survey-form__label {
+    text-align: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .survey-form__right-tab {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

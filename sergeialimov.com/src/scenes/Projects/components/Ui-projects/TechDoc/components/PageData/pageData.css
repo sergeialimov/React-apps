@@ -1,0 +1,41 @@
+.tech-doc__page-data {
+  overflow-y: scroll;
+}
+
+.tech-doc__page-data__text {
+  margin: 10px 20px 40px 20px;
+}
+
+.tech-doc__page-data__header_h2 {
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.tech-doc__page-data__code {
+  max-width: 280px;
+  margin-left: 40px;
+  padding-left: 10px;
+  line-height: 25px;
+  background-color: lightgray;
+}
+
+.tech-doc__page-data__list {
+  list-style: disc inside none;
+}
+
+.tech-doc__page-data__list-item {
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.tech-doc__page-data__paragraph {
+  line-height: 25px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+/* @media (max-width: 815px) {
+  .content {
+    margin: 0px 20px 20px 20px;
+  } */
+/* } */

@@ -1,0 +1,46 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "engines": {
+    "node": "12.16.x"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "dev-open": "webpack-dev-server --mode development --open",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p"
+  },
+  "author": "Sergei Alimov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.11",
+    "@types/react-router-dom": "^5.1.6",
+    "axios": "^0.20.0",
+    "express": "^4.16.3",
+    "react": "^16.3.2",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "ts-loader": "^8.0.5",
+    "typescript": "^4.0.3"
+  }
+}

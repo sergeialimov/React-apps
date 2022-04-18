@@ -1,0 +1,14 @@
+.tech-doc__container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 815px) {
+  .tech-doc__container {
+    grid-template-columns: auto;
+  }
+}

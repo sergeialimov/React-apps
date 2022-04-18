@@ -1,0 +1,49 @@
+.tech-doc__navigation {
+  overflow-y: hidden;
+  width: 100%;
+  border-style: solid;
+  border-color: gray;
+  border-width: 0 3px 0 0;
+}
+
+.tech-doc__navigation__list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  align-items: center;
+}
+
+.tech-doc__navigation__list-item {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  line-height: 35px;
+}
+
+.tech-doc__navigation__link {
+  padding-left: 25px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.tech-doc__navigation__header__h1 {
+  margin-left: 40px;
+  font-weight: 500;
+}
+
+
+@media (max-width: 815px) {
+  .tech-doc__navigation__header__h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .tech-doc__navigation__list {
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 0px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 3px 0 3px 0;
+  }
+}

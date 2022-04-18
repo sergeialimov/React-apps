@@ -1,0 +1,57 @@
+{
+  "name": "sergeialimov.com",
+  "version": "1.0.2",
+  "private": true,
+  "engines": {
+    "node": "12.16.x"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --mode development --open --watch",
+    "start": "node server.js",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "fix": "npm run lint -- --fix",
+    "lione": "eslint",
+    "lif": "eslint /Users/sergeialimov/projects/pers/react.sergeialimov.com/src/scenes/Projects/components/Ui-projects/ProductLanding/**/* --ext .js --ext .jsx"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "config": "^3.3.0",
+    "config-webpack": "^1.0.4",
+    "directory-tree": "^2.2.4",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-import-resolver-webpack": "^0.12.2",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.15",
+    "node-static": "^0.7.11",
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

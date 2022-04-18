@@ -1,0 +1,14 @@
+.square {
+  float: left;
+  height: 59px;
+  width: 60px;
+  border: 1px;
+  border-color: #2b3e50;
+  border-style: solid;
+  background-color: #2fc0fe;
+  border-left: 0px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.6em;
+}

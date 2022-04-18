@@ -1,0 +1,120 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background-color: #1A423E;
+  text-align: center;
+  color: #D2C7AB;
+}
+
+.pomodoro {
+  align-self: center;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #D2C7AB;
+}
+
+#abc {
+  display: grid;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 1fr 1fr;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.break-session {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#break-label {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: #D2C7AB;
+}
+
+#session-label {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  color: #D2C7AB;
+}
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 200px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.arrows {
+  width: 30px;
+  height: 30px;
+}
+
+#counter {
+  font-size: 30px;
+}
+
+#timer {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 250px;
+  height: 120px;
+  border: solid gray 7px;
+  border-radius: 25px;
+}
+
+#timer-label {
+  font-size: 25px;
+  color: #D2C7AB;
+}
+
+#time-left {
+  margin-top: 5px;
+  font-size: 50px;
+  font-weight: 550;
+  color: #D2C7AB;
+}
+
+#buttons {
+  margin-top: 20px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px;
+  height: 50px;
+}
+
+#start_stop {
+  width: 130px;
+  height: 50px;
+  background: black;
+  color: #D2C7AB;
+  line-height: 50px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+#reset {
+  width: 80px;
+  height: 50px;
+  background: black;
+  color: #D2C7AB;
+  line-height: 50px;
+  border-radius: 5px;
+}

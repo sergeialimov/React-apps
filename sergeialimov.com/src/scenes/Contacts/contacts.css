@@ -1,0 +1,31 @@
+#social {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddfd4;
+}
+
+.content {
+  height: 500px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10%;
+}
+
+.contacts__header-h1 {
+  text-align: center;
+  color: #424B54;
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  margin: 90px auto 30px auto;
+  max-width: 60%;
+}
