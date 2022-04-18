@@ -1,0 +1,210 @@
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background-color: gray;
+}
+
+#drum-machine {
+  align-self: center;
+  background-color: #D6D3CD;
+  width: 660px;
+  height: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #F3B22F;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+#keyboard {
+  width: 50%;
+  height: 85%;
+  align-self: center;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.drum-pad {
+  background-color: gray;
+  border: none;
+  height: 85px;
+  line-height: 85px;
+  width: 95px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px 0 #3C3B3A;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.drum-pad.active {
+  background-color: orange;
+}
+
+#rightPane {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 0.5fr;
+  background-color: gray;
+  font-weight: 600;
+  align-items: center;
+  grid-row-gap: 12px;
+}
+
+#firstLogo {
+  display: grid;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  margin-right: 10px;
+  justify-self: end;
+}
+
+#extra-logo {
+  display: none;
+}
+
+.logo.extra {
+  justify-self: end;
+}
+
+#toggler {
+}
+
+#modeToggle {
+  justify-self: center;
+  height: 50px;
+  width: 150px;
+  background-color: #D6D3CD;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#volume {
+  justify-self: center;
+  height: 25px;
+  width: 150px;
+  background-color: #D6D3CD;
+  display: flex;
+}
+
+#vol-control {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nameBox {
+  justify-self: center;
+  height: 40px;
+  width: 150px;
+  background-color: #D6D3CD;
+  display: flex;
+}
+
+#display {
+  margin: 0 auto 0 auto;
+  align-self: center;
+}
+
+#power {
+  justify-self: center;
+}
+
+#powerTitle {
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  justify-self: center;
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #F3B22F;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@media (max-width: 970px) {
+  #drum-machine {
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 55% 40%;
+    width: 380px;
+    height: 600px;
+  }
+
+  #keyboard {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #rightPane {
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
+    grid-row-gap: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  #firstLogo {
+    display: none;
+  }
+
+  #extra-logo {
+    display: grid;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #drum-pad {
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+  }
+}
